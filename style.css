@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    /* gap: 80px; */
+}
+
+.hero-left{
+    width: 50%;
+}
+
+.hero-left h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: #fff;
+    width: 70%;
+}
+
+.hero-left p{
+    width: 80%;
+    line-height: 1.4;
+    font-weight: 500;
+    color: #fff;
+}
+
+.hero-right{
+    width: 50%;
+
+}
+
+.cta{
+    margin-bottom: 20px;
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px hsl(248, 32%, 49%), 2px 2px 2px hsl(248, 32%, 49%);
+}
+
+.cta span{
+    font-weight: 600;
+}
+
+.form{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+.form div{
+    margin-bottom: 30px;
+}
+
+.form input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.btn input{
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.bottom{
+    font-size: 12px;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-weight: 600;
+}
+.bottom span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+/* input:invalid{
+    border-color: hsl(0, 100%, 74%);
+} */
+
+/* input:invalid{
+    background: url(/images/icon-error.svg) no-repeat 95% 50%;
+    background-size: 25px;
+    border: 2px solid hsl(0, 100%, 74%);;
+    transition: border 10ms;
+}
+
+  input:focus:invalid~.error::after{
+    content: attr(data-error);
+    position: absolute;
+    bottom: 0;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+    right: 0;
+    padding-bottom: 1rem;
+    color: hsl(0, 100%, 74%);
+} */
+
+/* input:required:focus:invalid{
+    background: url(/images/icon-error.svg) no-repeat 95%;
+    background-size: 25px;
+} */
+
+ .contact-form .form .input-control input:invalid{
+    background: url(/images/icon-error.svg) no-repeat 95% 50%;
+    background-size: 25px;
+    border: 2px solid hsl(0, 100%, 74%);
+    transition: border 10ms;
+}
+
+ .contact-form .form .input-control input:focus:invalid~.error::after {
+    content: attr(data-error);
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+    float: right;
+    margin-bottom: 20px;
+    color: hsl(0, 100%, 74%);;
+  }
+  
+
+@media only screen and (max-width: 768px){
+   main{
+       display: grid;
+       grid-template-columns: 1fr;
+       width: 100%;
+   }
+
+   .hero-left{
+       width: 100%;
+       padding: 50px;
+       text-align: center;
+   }
+
+   .hero-left h2{
+       width: 100%;
+       font-size: 30px;
+       margin-top: 40px;
+   }
+
+   .hero-left p{
+       width: 100%;
+   }
+   .hero-right{
+       width: 100%;
+       padding: 50px;
+   }
+}
+
+@media only screen and (max-width: 425px){
+   main{
+       display: grid;
+       grid-template-columns: 1fr;
+       width: 100%;
+       background-image: url(/images/bg-intro-mobile.png);
+       background-repeat: no-repeat;
+       background-color: hsl(0, 100%, 74%);
+   } 
+
+   .hero-left{
+       width: 100%;
+       text-align: center;
+       padding: 30px;
+   }
+
+   .hero-left h2{
+       width: 100%;
+       font-size: 25px;
+       margin-top: 50px;
+   }
+
+   .hero-left p{
+       width: 100%;
+       font-size: 15px;
+   }
+
+   .hero-right{
+       width: 100%;
+       padding: 30px;
+   }
+}
